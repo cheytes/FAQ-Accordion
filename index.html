@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="main">
+    <div class="container">
+      <div class="img-container">
+        <img class="box" src="images/illustration-box-desktop.svg" alt="">
+        <img class="woman" src="images/illustration-woman-online-desktop.svg" alt="">
+        <img class="pattern" src="images/bg-pattern-desktop.svg" alt="">
+      </div>
+      <div class="faq-container">
+        <h1>FAQ</h1>
+        <div class="faq-details">
+          <!-- question 1 -->
+          <div class="ques1">
+            <div class="question" onclick="showQuestion()">
+              <p>How many team members can I invite?</p>
+              <img class="darrow" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+          </div>
+          <hr>
+          <!-- question 2 -->
+          <div class="ques2">
+            <div class="question" onclick="showQuestion()">
+              <p>What is the maximum file upload size?</p>
+              <img class="darrow" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+          <hr>
+          <!-- question 3 -->
+          <div class="ques3">
+            <div class="question" onclick="showQuestion()">
+              <p>How do I reset my password?</p>
+              <img class="darrow" src="images/icon-arrow-down.svg" alt="">  
+            </div>
+            <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>
+          <hr>
+          <!-- question 4 -->
+          <div class="ques3">
+            <div class="question" onclick="showQuestion()">
+              <p>Can I cancel my subscription?</p>
+              <img class="darrow" src="images/icon-arrow-down.svg" alt="">  
+            </div>
+            <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+          <hr>
+          <!-- question 5 -->
+          <div class="ques3">
+            <div class="question" onclick="showQuestion()">
+              <p>Do you provide additional support?</p>
+              <img class="darrow" src="images/icon-arrow-down.svg" alt="">  
+            </div>
+            <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+
+      var acc = document.getElementsByClassName("question");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+
+  </script>
+
+</body>
+</html>
