@@ -20,7 +20,7 @@ This is my solution to the [FAQ accordion card challenge on Frontend Mentor](htt
 
 ### Links
 
-- Live Site URL: [FAQ Accordion](https://your-live-site-url.com)
+- Live Site URL: [FAQ Accordion]([https://your-live-site-url.com](https://cheytes.github.io/FAQ-Accordion/)
 
 ## My process
 
